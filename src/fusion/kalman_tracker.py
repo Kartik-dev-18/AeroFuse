@@ -31,7 +31,7 @@ class DroneTracker:
     def predict(self):
         """Predict the next state. Useful during frame-drops or occlusions."""
         self.kf.predict()
-        return self.kf.x[:2]
+        return self.kf.x[:2].flatten()
 
     def get_state(self):
         return self.kf.x
