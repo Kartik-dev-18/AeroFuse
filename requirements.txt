@@ -1,0 +1,8 @@
+ultralytics
+gradio
+onnxruntime
+opencv-python-headless
+numpy
+torch
+matplotlib
+filterpy
